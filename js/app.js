@@ -1,20 +1,20 @@
 
- let scelta;
+//  let scelta;
 
-// true && false => false
-// false && false => false
-// true && true => true
-// true || false => true
-// true || true => true
-// (false || false) => false
-// !(false || false) => !(false) => true
+// // true && false => false
+// // false && false => false
+// // true && true => true
+// // true || false => true
+// // true || true => true
+// // (false || false) => false
+// // !(false || false) => !(false) => true
 
 
- do {
-     scelta = prompt('inserisci "pari" o "dispari"'); // ciao
- } while (!(scelta === 'pari' || scelta === 'dispari')); // !(false || false) => !(false) => true
+//  do {
+//      scelta = prompt('inserisci "pari" o "dispari"'); // ciao
+//  } while (!(scelta === 'pari' || scelta === 'dispari')); // !(false || false) => !(false) => true
 
- console.log(scelta); // pari o dispari
+//  console.log(scelta); // pari o dispari
 
 
 
