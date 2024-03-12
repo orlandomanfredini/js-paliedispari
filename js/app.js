@@ -41,3 +41,37 @@ function isPalindrome(word1, word2){
 
 console.log(relust)
 
+// --- consegna 2
+// Pari e Dispari
+// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+// Sommiamo i due numeri
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+// Dichiariamo chi ha vinto.
+
+// chiedo a utente se il risultato della somma è pari o dispari
+let whoWin = prompt('il risultato della somma è pari o dispari?');//string
+console.log(whoWin);
+
+
+// chiesto a utente di inserire numero da 1 a 5 
+let numberUser = parseInt(prompt('inserisci numero da 1 a 5')); //number
+console.log(numberUser); //number
+
+// genero un numero random dal computer 
+let randomNumber = Math.floor(Math.random()* 5) + 1; //number
+console.log(randomNumber)
+
+
+// sommo i due numeri e restituisco 
+function isSumEveen(num1, num2){
+    let sumResults = num1 + num2;
+    
+    return sumResults
+
+    // output number
+}
+
+let finalResults = isSumEveen(numberUser, randomNumber); // invocazione functio isSumEveen
+console.log(finalResults)
+
