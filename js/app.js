@@ -51,7 +51,8 @@ console.log(relust)
 
 // chiedo a utente se il risultato della somma è pari o dispari
 let whoWin = prompt('il risultato della somma è pari o dispari?');//string
-console.log(whoWin);
+console.log('utente ha scelto ' + whoWin);
+
 
 
 // chiesto a utente di inserire numero da 1 a 5 
@@ -60,18 +61,36 @@ console.log(numberUser); //number
 
 // genero un numero random dal computer 
 let randomNumber = Math.floor(Math.random()* 5) + 1; //number
-console.log(randomNumber)
+console.log(randomNumber); //number
+
+
 
 
 // sommo i due numeri e restituisco 
-function isSumEveen(num1, num2){
+function sumNumber(num1, num2){
     let sumResults = num1 + num2;
+    
     
     return sumResults
 
     // output number
 }
 
-let finalResults = isSumEveen(numberUser, randomNumber); // invocazione functio isSumEveen
-console.log(finalResults)
+let finalResults = sumNumber(numberUser, randomNumber); // invocazione functio isSumEveen
+console.log('la somma è ' + finalResults)
+
+
+//creo un ciclo che legge chi vince secondo utente
+let chooseEveen = 'pari';
+let chooseOdd = 'dispari'
+
+
+    if(finalResults % 2 === 0 && whoWin === chooseEveen){
+        console.log('utente ha vinto')
+    }else if(finalResults % 2 !== 0 && whoWin === chooseOdd){
+        console.log('utente ha vinto')
+    }else{
+        console.log('computer ha vinto')
+        
+    }
 
